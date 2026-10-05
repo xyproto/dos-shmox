@@ -3737,7 +3737,7 @@ void DOSBOX_SetupConfigSections(void) {
          "Default is false.");
 
 #if C_FLUIDSYNTH || defined(WIN32) && !defined(HX_DOS)
-	const char *fluiddrivers[] = {"pulseaudio", "alsa", "oss", "coreaudio", "dsound", "portaudio", "sndman", "jack", "file", "default", nullptr };
+	const char *fluiddrivers[] = {"pipewire", "pulseaudio", "alsa", "oss", "coreaudio", "dsound", "portaudio", "sndman", "jack", "file", "default", nullptr };
 	Pstring = secprop->Add_string("fluid.driver",Property::Changeable::WhenIdle,"default");
 	Pstring->Set_values(fluiddrivers);
 	Pstring->Set_help("Driver to use with Fluidsynth, not needed under Windows. Available drivers depend on what Fluidsynth was compiled with.");

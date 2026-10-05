@@ -387,9 +387,9 @@ public:
 		if (strcmp(section->Get_string("fluid.driver"), "default") != 0) {
 			fluid_settings_setstr(settings, "audio.driver", section->Get_string("fluid.driver"));
 		}
-#if defined (__linux__) // Let's use pulseaudio as default on Linux, and not the FluidSynth default of Jack
+#if defined (__linux__) // Let's use pipewire as default on Linux, and not the FluidSynth default of Jack
 		else {
-			fluid_settings_setstr(settings, "audio.driver", "pulseaudio");
+			fluid_settings_setstr(settings, "audio.driver", "pipewire");
 		}
 #endif
 #if defined (WIN32) && !defined(HX_DOS)
@@ -448,6 +448,13 @@ public:
 		}
 
 		adriver = new_fluid_audio_driver(settings, synth);
+#if defined (__linux__)
+		if (!adriver && strcmp(section->Get_string("fluid.driver"), "default") == 0) {
+			LOG_MSG("MIDI:fluidsynth: Can't create pipewire audio driver, trying pulseaudio");
+			fluid_settings_setstr(settings, "audio.driver", "pulseaudio");
+			adriver = new_fluid_audio_driver(settings, synth);
+		}
+#endif
 		if (!adriver) {
 			LOG_MSG("MIDI:fluidsynth: Can't create audio driver");
 			delete_fluid_synth(synth);
