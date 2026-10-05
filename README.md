@@ -1,4 +1,4 @@
-## DosBox-X
+## DOS-Shmox
 
 ## Useful links
 - [DOSBox-X's website](https://dosbox-x.com) ([https://dosbox-x.com](https://dosbox-x.com) or [http://dosbox-x.software](http://dosbox-x.software))
@@ -24,9 +24,9 @@
 - [Known DOSBox-X forks](#known-dosbox-x-forks)
 - [Support for international language translations and keyboard layouts](#support-for-international-language-translations-and-keyboard-layouts)
 
-## Introduction to DOSBox-X
+## Introduction to DOS-Shmox
 
-DOSBox-X is a cross-platform DOS emulator based on the DOSBox project (www.dosbox.com).
+DOS-Shmox is a cross-platform DOS emulator based on the DOSBox-X project.
 
 Like DOSBox, it emulates a PC necessary for running many MS-DOS games and applications that simply cannot be run on modern PCs and operating systems. However, while the main focus of DOSBox is for running DOS games, DOSBox-X goes much further than this. Started as a fork of the DOSBox project, it retains compatibility with the wide base of DOS games and DOS gaming DOSBox was designed for. But it is also a platform for running DOS applications, including emulating the environments to run Windows 3.x, 9x and ME and software written for those versions of Windows. By adding official support for Windows 95, 98, ME emulation and acceleration, we hope that those old Windows games and applications could be enjoyed or used once more. Moreover, DOSBox-X adds support for DOS/V and NEC PC-98 emulations so that you can play DOS/V and PC-98 games with it.
 
@@ -39,10 +39,6 @@ DOSBox-X is completely open-source and free of charge to use and distribute. It 
 This project has a [Code of Conduct](CODE_OF_CONDUCT.md), please read it for general information on contributing to or getting support from the project.
 
 Brought to you by: joncampbell123 (Jonathan Campbell)
-
-## Legal notice
-
-If you reside in a jurisdiction that enforces OS level age verification, you are only permitted to use the main-osfree branch of this project (including builds), and are prohibited from using the main (master) branch of this project.
 
 ## Notable features in DOSBox-X
 
