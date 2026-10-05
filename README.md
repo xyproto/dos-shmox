@@ -1,14 +1,13 @@
-
-**Welcome to the DOSBox-X project homepage located on GitHub.**
+## DosBox-X
 
 ## Useful links
-- [DOSBox-X's website](https://dosbox-x.com) ([https://dosbox-x.com](https://dosbox-x.com) or [http://dosbox-x.software](http://dosbox-x.software))  
-- [DOSBox-X's Wiki page](https://dosbox-x.com/wiki)  
+- [DOSBox-X's website](https://dosbox-x.com) ([https://dosbox-x.com](https://dosbox-x.com) or [http://dosbox-x.software](http://dosbox-x.software))
+- [DOSBox-X's Wiki page](https://dosbox-x.com/wiki)
 - The DOSBox-X project has a Discord server. Please ask in the discussion tab for a one-time invite link to join.
-- [Releases](https://github.com/joncampbell123/dosbox-x/releases)  
-- [Development/Nightly builds](https://dosbox-x.com/devel-build.html)  
-- [Install instructions](INSTALL.md)  
-- [Build instructions](BUILD.md)  
+- [Releases](https://github.com/joncampbell123/dosbox-x/releases)
+- [Development/Nightly builds](https://dosbox-x.com/devel-build.html)
+- [Install instructions](INSTALL.md)
+- [Build instructions](BUILD.md)
 
 ## Table of Contents
 
@@ -138,7 +137,7 @@ As joncampbell123 only has limited time to work on DOSBox-X, help is
 greatly appreciated:
 
   - Testing
-    - Features of DOSBox-X, such as its commands and functions 
+    - Features of DOSBox-X, such as its commands and functions
     - The normal operation of DOS games and applications
     - Windows 1.0/2.x/3.x & Windows 95/98/ME guest system support
     - Software or hardware emulation accuracy, helped by for example demoscene software
@@ -364,7 +363,7 @@ See also the [CREDITS](CREDITS.md) page for crediting of the source code.
   These significant changes require dropping some useful features (including the menus) but are required for performance.
 
   URL: https://github.com/yksoft1/dosbox-x-vanilla-sdl/tree/emscripten (look for clone URL and use the emscripten branch)
-  
+
 * DOSBox-X-App (for Windows and macOS) by emendelson
 
   DOSBox-X-App is a slightly customized version of DOSBox-X, combined with external programs and commands that make it
@@ -394,7 +393,7 @@ DOSBox-X displays English as the default language, and uses the U.S. code page (
 
 All messages displayed by DOSBox-X are in English with the default setting. DOSBox-X does support the feature to
 change the display messages with the use of language files. The language files control all visible output of the
-internal commands and the internal DOS, as well as the text in DOSBox-X's drop-down menus.  
+internal commands and the internal DOS, as well as the text in DOSBox-X's drop-down menus.
 Language files can be found in the `languages` directory of your DOSBox-X installation or
 https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/ .
 
@@ -402,7 +401,7 @@ Language files currently available are:
 
 [Chinese (Simplified)](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/zh/zh_CN.lng),
 [Chinese (Traditional)](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/zh/zh_TW.lng),
-[Dutch](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/nl/nl_NL.lng), 
+[Dutch](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/nl/nl_NL.lng),
 [French](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/fr/fr_FR.lng),
 [German](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/de/de_DE.lng),
 [Hungarian](https://github.com/joncampbell123/dosbox-x/blob/master/contrib/translations/hu/hu_HU.lng),
@@ -423,7 +422,7 @@ On Windows, DOSBox-X will try to match the layout with your physical keyboard wh
 On other platforms, the keyboard will work as US keyboard if not set otherwise.
 
 The SDL1 version additionally requires use of scancodes by enabling `usescancodes` option, when using non-US keyboards.
-The default setting (`usescancodes=auto`) should work in most cases, and this setting is NOT required and ignored for SDL2 versions. 
+The default setting (`usescancodes=auto`) should work in most cases, and this setting is NOT required and ignored for SDL2 versions.
 
 If you find that a keyboard layout is not yet supported by DOSBox-X, in order to add additional layouts for use with DOSBox-X, please see file [README.keyboard-layout-handling](README.keyboard-layout-handling)
 on how to do so as a developer.
@@ -435,4 +434,3 @@ You can set the codepage by `KEYB` or `CHCP` command. Type `KEYB /?` or `CHCP /?
 For further information on international support and regional settings of DOSBox-X, such as steps to create DOSBox-X
 language files or use external keyboard files in DOSBox-X, as well as support for the Euro symbol and country-specific
 date and time formats, please look at the guide [Regional settings in DOSBox-X](https://dosbox-x.com/wiki/Guide%3ARegional-settings-in-DOSBox%E2%80%90X) in the [DOSBox-X Wiki](https://dosbox-x.com/wiki). For more information on East Asian (Chinese/Japanese/Korean) language support, see the [East Asian language and system support](https://dosbox-x.com/wiki/Guide%3AEast-Asian-language-support-in-DOSBox%E2%80%90X) guide page.
-
